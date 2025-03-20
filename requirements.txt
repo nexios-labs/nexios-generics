@@ -1,0 +1,4 @@
+pydantic
+uvicorn
+tortoise-orm
+git+https://github.com/nexios-labs/nexios.git@internals/eco
