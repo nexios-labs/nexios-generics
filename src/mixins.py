@@ -69,8 +69,7 @@ class ListModelMixin:
         return [pydantic_class.from_orm(obj).dict() for obj in objects]
 
     def handle_list_error(self, res: Response, error: Exception) -> Response:
-        return res.status(500).json(self.format_error_response("Failed to fetch objects", details=str(error)))
-
+        raise error
     def handle_list_success(self, res: Response, serialized_objects: List[dict]) -> Response:
         return res.status(200).json(self.format_success_response(serialized_objects))
 
@@ -92,7 +91,7 @@ class DeleteModelMixin:
         await obj.delete()
 
     def handle_delete_error(self, res: Response, error: Exception) -> Response:
-        return res.status(500).json(self.format_error_response("Failed to delete object", details=str(error)))
+        raise error
 
     def handle_delete_success(self, res: Response) -> Response:
         return res.status(204).json(self.format_success_response(None, status_code=204))
