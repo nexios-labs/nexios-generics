@@ -266,8 +266,8 @@ For more information on **Nexios**, visit the official documentation: [Nexios Do
 
 ## Logo
 
-![Nexios Logo](https://nexios.io/logo.png)
+![Nexios Logo](https://nexios-labs.github.io/Nexios)
 
 ---
 
-Thank you for using this framework! If you have any questions or feedback, please open an issue on [GitHub](https://github.com/yourusername/your-repo).
+Thank you for using this framework! If you have any questions or feedback, please open an issue on [GitHub](https://github.com/nexios-labs/nexios-generics).
