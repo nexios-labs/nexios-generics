@@ -1,0 +1,19 @@
+[project]
+name = "nexios-generic"
+version = "0.1.1"
+description = "Nexios-Generic is an extension for the Nexios framework that provides a class-based view implementation, integrating seamlessly with Tortoise ORM and Pydantic for efficient, structured API development. It simplifies request handling, validation, and database interactions, enabling a more declarative and reusable approach to building Nexios applications."
+authors = [
+    {name = "dunamix",email = "techwithdunamix@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "nexios (>=2.2.4)"
+]
+license = "BSD-3-Clause"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+[[tool.poetry.packages]]
+include = "nexios_generic"

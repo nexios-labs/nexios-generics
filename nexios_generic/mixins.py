@@ -62,7 +62,7 @@ class ListModelMixin:
         return self.handle_list_success(res, serialized_objects)
 
     async def perform_list(self, queryset: QuerySet) -> List[Model]:
-        return await queryset.all()
+        return queryset
 
     async def serialize_objects(self, objects: List[Model]) -> List[dict]:
         pydantic_class = self.get_pydantic_class()
